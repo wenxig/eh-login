@@ -19,16 +19,14 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        icon: 'https://vitejs.dev/logo.svg',
-        namespace: 'npm/vite-plugin-monkey',
+        namespace: 'wenxig/eh-login',
         match: ['*://e-hentai.org/*', '*://exhentai.org/*'],
-        description: ''
+        description: 'https://github.com/wenxig/delta-comic',
+        author: 'wenxig',
+        version: '0.0.1'
       },
     }),
   ],
-  experimental: {
-    enableNativePlugin: true
-  },
   css: {
     transformer: 'lightningcss',
     lightningcss: {
